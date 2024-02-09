@@ -9,9 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var sceneView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let gifLoad = UIImage.gifImageWithName("OPintro")
+        sceneView.image = gifLoad
     }
 
 
