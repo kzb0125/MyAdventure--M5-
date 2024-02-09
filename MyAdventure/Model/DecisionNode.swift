@@ -11,14 +11,13 @@ class DecisionNode {
     let value: Int
     var leftChild: DecisionNode?
     var rightChild: DecisionNode?
-    var decision: Bool
+    var decision: Bool = false
     
-    init(_value: Int, _leftChild: DecisionNode?, _rightChild: DecisionNode?, _decision: Bool) {
-        self.value = _value
-        self.leftChild = _leftChild
-        self.rightChild = _rightChild
-        self.decision = _decision
+    init(_ value: Int,_ leftChild: DecisionNode?,_ rightChild: DecisionNode?) {
+        self.value = value
+        self.leftChild = leftChild
+        self.rightChild = rightChild
     }
+    
+
 }
-
-

@@ -15,6 +15,7 @@
 		24A062CF2B7596B200B5F1E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A062CD2B7596B200B5F1E0 /* LaunchScreen.storyboard */; };
 		24A062D72B759CF000B5F1E0 /* DecisionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A062D62B759CF000B5F1E0 /* DecisionNode.swift */; };
 		24A062D92B75A6C900B5F1E0 /* DecisionLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A062D82B75A6C900B5F1E0 /* DecisionLogic.swift */; };
+		24A062DD2B75F48900B5F1E0 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A062DC2B75F48900B5F1E0 /* Scene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		24A062D02B7596B200B5F1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24A062D62B759CF000B5F1E0 /* DecisionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionNode.swift; sourceTree = "<group>"; };
 		24A062D82B75A6C900B5F1E0 /* DecisionLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionLogic.swift; sourceTree = "<group>"; };
+		24A062DC2B75F48900B5F1E0 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				24A062D62B759CF000B5F1E0 /* DecisionNode.swift */,
 				24A062D82B75A6C900B5F1E0 /* DecisionLogic.swift */,
+				24A062DC2B75F48900B5F1E0 /* Scene.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				24A062C72B7596B100B5F1E0 /* ViewController.swift in Sources */,
 				24A062D72B759CF000B5F1E0 /* DecisionNode.swift in Sources */,
+				24A062DD2B75F48900B5F1E0 /* Scene.swift in Sources */,
 				24A062C32B7596B100B5F1E0 /* AppDelegate.swift in Sources */,
 				24A062D92B75A6C900B5F1E0 /* DecisionLogic.swift in Sources */,
 				24A062C52B7596B100B5F1E0 /* SceneDelegate.swift in Sources */,
