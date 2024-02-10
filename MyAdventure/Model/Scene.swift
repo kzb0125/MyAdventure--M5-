@@ -7,9 +7,16 @@
 
 import Foundation
 
-struct Scene {
+class Scene {
     var number: Int?
     var prompt: String?
     var choiceOne: String?
     var choiceTwo: String?
+    
+    init(number: Int? = nil, prompt: String? = nil, choiceOne: String? = nil, choiceTwo: String? = nil) {
+        self.number = number
+        self.prompt = prompt
+        self.choiceOne = choiceOne
+        self.choiceTwo = choiceTwo
+    }
 }

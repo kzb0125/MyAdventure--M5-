@@ -24,6 +24,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNq-mE-qMw" userLabel="buttonOne">
+                                <rect key="frame" x="36" y="478" width="359" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Choice One"/>
+                                <connections>
+                                    <action selector="nextSceneSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tk5-Ne-zCS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOj-9c-GgF" userLabel="buttonTwo">
+                                <rect key="frame" x="36" y="628" width="359" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Choice Two"/>
+                                <connections>
+                                    <action selector="nextSceneSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eOH-Ag-ZOe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -35,6 +53,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonOne" destination="fNq-mE-qMw" id="YFD-Y3-tCb"/>
+                        <outlet property="buttonTwo" destination="eOj-9c-GgF" id="Pnh-u9-hRt"/>
                         <outlet property="sceneView" destination="Hfm-Xg-The" id="b99-QT-Cm3"/>
                     </connections>
                 </viewController>
