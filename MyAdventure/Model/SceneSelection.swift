@@ -91,7 +91,7 @@ struct SceneSelection{
     )
     
     func createSceneArr() -> [Scene]{
-        var sceneArr: [Scene] = [sceneZero, sceneOne, sceneTwo, sceneThree, sceneFour, sceneFive, sceneSix, sceneSeven, sceneEight, sceneNine, sceneTen, sceneEleven, sceneTwelve, sceneThirteen, sceneFourteen]
+        let sceneArr: [Scene] = [sceneZero, sceneOne, sceneTwo, sceneThree, sceneFour, sceneFive, sceneSix, sceneSeven, sceneEight, sceneNine, sceneTen, sceneEleven, sceneTwelve, sceneThirteen, sceneFourteen]
         return sceneArr
     }
 
