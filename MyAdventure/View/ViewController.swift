@@ -51,10 +51,11 @@ class ViewController: UIViewController {
                 decisionLogic.nextScene(2)
             }
         }
-        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(displayScene), userInfo: nil, repeats: false)
+//        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(displayScene), userInfo: nil, repeats: false)
+        displayScene()
     }
     
-    @objc func displayScene() {
+   func displayScene() {
         // display scene
         gifFile = decisionLogic.currentScene
         let loadGif = UIImage.gifImageWithName("\(gifFile)")
@@ -64,6 +65,7 @@ class ViewController: UIViewController {
         prompt.text = decisionLogic.sceneArr?[currentScene].prompt
         buttonOne.setTitle(decisionLogic.sceneArr?[currentScene].choiceOne, for: .normal)
         buttonTwo.setTitle("\(decisionLogic.currentScene)", for: .normal)
+        
     }
 
 }
