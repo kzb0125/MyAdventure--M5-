@@ -48,8 +48,8 @@ struct SceneSelection{
     var sceneSix = Scene(
             number: 6,
             prompt: "Luffy successfully sneaks onto the ship.",
-            choiceOne: "Continue to sneak around?",
-            choiceTwo: "This is a good time to attack!"
+            choiceOne: "This is a good time to attack!",
+            choiceTwo:"Continue to sneak around?"
     )
     var sceneSeven = Scene(
             number: 7,

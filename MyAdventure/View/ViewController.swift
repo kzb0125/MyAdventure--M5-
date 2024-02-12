@@ -16,9 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonTwo: UIButton!
     
     var decisionLogic = DecisionLogic()
-    var currentScene: Int = 0
-    var nextScene: Int?
-    var sceneArr: [Scene]?
     var gifFile: Int = 0
     
     var clickCount = 0
@@ -28,8 +25,6 @@ class ViewController: UIViewController {
         
         // Scene initialization
         decisionLogic.loadSceneArr()
-        let scenes = SceneSelection()
-        sceneArr = scenes.createSceneArr()
         
         // display intro scene
         let loadGif = UIImage.gifImageWithName("onepiece_intro")
@@ -51,20 +46,20 @@ class ViewController: UIViewController {
                 decisionLogic.nextScene(2)
             }
         }
-//        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(displayScene), userInfo: nil, repeats: false)
-        displayScene()
+        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(displayScene), userInfo: nil, repeats: false)
+//        displayScene()
     }
     
-   func displayScene() {
+   @objc func displayScene() {
         // display scene
         gifFile = decisionLogic.currentScene
         let loadGif = UIImage.gifImageWithName("\(gifFile)")
         sceneView.image = loadGif
         
         //display prompt and next two choices
-        prompt.text = decisionLogic.sceneArr?[currentScene].prompt
-        buttonOne.setTitle(decisionLogic.sceneArr?[currentScene].choiceOne, for: .normal)
-        buttonTwo.setTitle("\(decisionLogic.currentScene)", for: .normal)
+       prompt.text = decisionLogic.sceneArr?[decisionLogic.currentScene].prompt
+       buttonOne.setTitle(decisionLogic.sceneArr?[decisionLogic.currentScene].choiceOne, for: .normal)
+        buttonTwo.setTitle(decisionLogic.sceneArr?[decisionLogic.currentScene].choiceTwo, for: .normal)
         
     }
 
