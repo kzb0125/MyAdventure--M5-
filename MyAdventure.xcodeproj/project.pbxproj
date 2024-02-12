@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24811CAD2B79B8B500A778AC /* 9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 24811CAB2B79B8B400A778AC /* 9.gif */; };
+		24811CAE2B79B8B500A778AC /* 10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 24811CAC2B79B8B500A778AC /* 10.gif */; };
 		24A062C32B7596B100B5F1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A062C22B7596B100B5F1E0 /* AppDelegate.swift */; };
 		24A062C52B7596B100B5F1E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A062C42B7596B100B5F1E0 /* SceneDelegate.swift */; };
 		24A062C72B7596B100B5F1E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A062C62B7596B100B5F1E0 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24811CAB2B79B8B400A778AC /* 9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 9.gif; sourceTree = "<group>"; };
+		24811CAC2B79B8B500A778AC /* 10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 10.gif; sourceTree = "<group>"; };
 		24A062BF2B7596B100B5F1E0 /* MyAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A062C22B7596B100B5F1E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24A062C42B7596B100B5F1E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				24A063562B78E85200B5F1E0 /* 6.gif */,
 				24A0635B2B78E85300B5F1E0 /* 7.gif */,
 				24A063582B78E85200B5F1E0 /* 8.gif */,
+				24811CAB2B79B8B400A778AC /* 9.gif */,
+				24811CAC2B79B8B500A778AC /* 10.gif */,
 				24A063532B78E85200B5F1E0 /* 11.gif */,
 				24A063522B78E85200B5F1E0 /* 12.gif */,
 				24A063592B78E85200B5F1E0 /* 13.gif */,
@@ -210,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24A063612B78E85300B5F1E0 /* 1.gif in Resources */,
+				24811CAD2B79B8B500A778AC /* 9.gif in Resources */,
 				24A062E62B764BAD00B5F1E0 /* onepiece_intro.gif in Resources */,
 				24A062CF2B7596B200B5F1E0 /* LaunchScreen.storyboard in Resources */,
 				24A063682B78E85300B5F1E0 /* 14.gif in Resources */,
@@ -223,6 +230,7 @@
 				24A0635F2B78E85300B5F1E0 /* 11.gif in Resources */,
 				24A063652B78E85300B5F1E0 /* 13.gif in Resources */,
 				24A062DF2B763A5400B5F1E0 /* onepiece_outro.gif in Resources */,
+				24811CAE2B79B8B500A778AC /* 10.gif in Resources */,
 				24A063642B78E85300B5F1E0 /* 8.gif in Resources */,
 				24A063662B78E85300B5F1E0 /* 4.gif in Resources */,
 				24A062CA2B7596B100B5F1E0 /* Main.storyboard in Resources */,

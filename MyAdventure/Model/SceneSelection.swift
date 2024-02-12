@@ -37,7 +37,7 @@ struct SceneSelection{
             number: 4,
             prompt: "GOMU-GOMU-NO PISTOL!!!",
             choiceOne: "TO BE CONTINUED",
-            choiceTwo: "TO BE CONTINUED"
+            choiceTwo: "RESTART ADVENTURE"
     )
     var sceneFive = Scene(
             number: 5,
@@ -55,13 +55,13 @@ struct SceneSelection{
             number: 7,
             prompt: "\"OOPS!\"",
             choiceOne: "TO BE CONTINUED",
-            choiceTwo: "TO BE CONTINUED"
+            choiceTwo: "RESTART ADVENTURE"
     )
     var sceneEight = Scene(
             number: 8,
             prompt: "\"I've gotta do everything around here!\"",
             choiceOne: "TO BE CONTINUED",
-            choiceTwo: "TO BE CONTINUED"
+            choiceTwo: "RESTART ADVENTURE"
     )
     var sceneNine = Scene()
     var sceneTen = Scene()
@@ -69,25 +69,25 @@ struct SceneSelection{
             number: 11,
             prompt: "Luffy punches Admiral Garp!",
             choiceOne: "TO BE CONTINUED",
-            choiceTwo: "TO BE CONTINUED"
+            choiceTwo: "RESTART ADVENTURE"
     )
     var sceneTwelve = Scene(
             number: 12,
             prompt: "Admiral Garp punches Luffy!",
             choiceOne: "TO BE CONTINUED",
-            choiceTwo: "TO BE CONTINUED"
+            choiceTwo: "RESTART ADVENTURE"
     )
     var sceneThirteen = Scene(
             number: 13,
             prompt: "GOMU-GOMU-NO GIGANT PISTOL!!!",
             choiceOne: "TO BE CONTINUED",
-            choiceTwo: "TO BE CONTINUED"
+            choiceTwo: "RESTART ADVENTURE"
     )
     var sceneFourteen = Scene(
             number: 14,
             prompt: "Luffy disguises as a marine cook",
             choiceOne: "TO BE CONTINUED",
-            choiceTwo: "TO BE CONTINUED"
+            choiceTwo: "RESTART ADVENTURE"
     )
     
     func createSceneArr() -> [Scene]{

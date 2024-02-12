@@ -10,15 +10,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var sceneView: UIImageView!
-    
     @IBOutlet weak var prompt: UILabel!
     @IBOutlet weak var buttonOne: UIButton!
     @IBOutlet weak var buttonTwo: UIButton!
     
     var decisionLogic = DecisionLogic()
-    var gifFile: Int = 0
-    
-    var clickCount = 0
+    var sceneCount = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,26 +30,31 @@ class ViewController: UIViewController {
         buttonTwo.isHidden = true
     }
     
+    // action when decision button is pressed
     @IBAction func nextSceneSelected(_ sender: UIButton) {
-        if (clickCount == 0) {
-            clickCount += 1
+        if (sceneCount == -1) {
+            sceneCount += 1
             buttonTwo.isHidden = false
+        } else if (sceneCount > 2){
+            sceneCount = 0
+            decisionLogic.reset()
         } else {
             if (buttonOne.isTouchInside == true) {
-                clickCount += 1
+                sceneCount += 1
                 decisionLogic.nextScene(1)
             } else {
-                clickCount += 1
+                sceneCount += 1
                 decisionLogic.nextScene(2)
             }
         }
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(displayScene), userInfo: nil, repeats: false)
-//        displayScene()
     }
     
-   @objc func displayScene() {
+
+    // function to display the selected scene
+    @objc func displayScene() {
         // display scene
-        gifFile = decisionLogic.currentScene
+        let gifFile = decisionLogic.currentScene
         let loadGif = UIImage.gifImageWithName("\(gifFile)")
         sceneView.image = loadGif
         
@@ -62,6 +64,5 @@ class ViewController: UIViewController {
         buttonTwo.setTitle(decisionLogic.sceneArr?[decisionLogic.currentScene].choiceTwo, for: .normal)
         
     }
-
 }
 

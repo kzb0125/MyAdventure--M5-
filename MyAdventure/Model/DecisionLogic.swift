@@ -57,6 +57,9 @@ struct DecisionLogic {
         }
     }
     
+    mutating func reset() {
+        currentScene = 0
+    }
 //    func loadScene(_currentScene: Int) -> Scene {
 //        
 //    }
